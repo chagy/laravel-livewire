@@ -6,10 +6,18 @@ use Livewire\Component;
 
 class HelloWorld extends Component
 {
-    public $name = "Bunnason Chagy";
-    
+    private $name = "Bunnason Chagy";
+
+    public $message1 = 'Plaseholder Message';
+    public $message2 = 'Plaseholder Message';
+
+    public function mount()
+    {
+        $this->name = "Chagy Bunnason";
+    }
+
     public function render()
     {
-        return view('livewire.hello-world');
+        return view('livewire.hello-world',['name' => $this->name]);
     }
 }
