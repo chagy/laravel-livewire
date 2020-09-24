@@ -20,12 +20,12 @@ class Counter extends Component
 
     public function increment($step)
     {
-        $this->counter+=$step;
+        $this->counter+= $step;
     }
 
     public function decrement($step)
     {
-        $this->counter-=$step;
+        $this->counter-= $step;
     }
 
     // public function hydrate()

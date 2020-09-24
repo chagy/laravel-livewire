@@ -1,7 +1,7 @@
 <div>
-    Hello World {{ $name }}
-    <input type="text" wire:model.lazy="message1">
+    Hello World {{ $name }} {{ $count }}
+    {{-- <input type="text" wire:model.lazy="message1">
     <p>{{ $message1 }}</p>
     <input type="text" wire:model.lazy="message2">
-    <p>{{ $message2 }}</p>
+    <p>{{ $message2 }}</p> --}}
 </div>
