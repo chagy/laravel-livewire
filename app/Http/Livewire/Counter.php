@@ -11,43 +11,21 @@ class Counter extends Component
 
     public $step;
 
-    public $hydrate = 1;
-
-    public function checkKey($key)
-    {
-        $this->step = $key;
-    }
-
-    public function increment($step)
-    {
-        $this->counter+= $step;
-    }
-
-    public function decrement($step)
-    {
-        $this->counter-= $step;
-    }
-
-    // public function hydrate()
-    // {
-    //     $this->hydrate++;
-    // }
-
-    public function updatingStep()
-    {
-        $this->hydrate++;
-    }
-
-    public function updatedStep()
-    {
-        $this->hydrate++;
-    }
-
-    public function mount(Request $request,$steps = 1)
+    public function mount()
     {
         $this->counter = 0;
-        $this->step = $request->steps ?? $steps;
+        $this->step = 1;
     }
+
+    // public function increment()
+    // {
+    //     $this->emit('incrementEmit');
+    // }
+
+    // public function decrement()
+    // {
+    //     $this->emit('decrementEmit');
+    // }
 
     public function render()
     {
