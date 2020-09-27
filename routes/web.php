@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home',App\Http\Livewire\Home::class);
+Route::get('/home',App\Http\Livewire\Home::class)->layout('layouts.base')->section('contents');
 Route::get('/about',App\Http\Livewire\About::class);
 Route::get('/contact',App\Http\Livewire\Contact::class);

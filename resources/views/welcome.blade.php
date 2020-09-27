@@ -50,6 +50,6 @@
             </div>
         </div>
         <script src="{{ asset('js/app') }}"></script>
-        @livewireScripts
+        <script src="{{ asset('vendor/livewire/livewire.js') }}"></script>
     </body>
 </html>

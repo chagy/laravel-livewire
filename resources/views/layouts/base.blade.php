@@ -20,7 +20,7 @@
             @livewire('navigation')
         </div>
         <div class="content">
-            @yield('content')
+            @yield('contents')
         </div>
     </div>
     
