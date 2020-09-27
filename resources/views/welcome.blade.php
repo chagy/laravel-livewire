@@ -35,13 +35,21 @@
                     @endif
                 </div>
             @endif
+            <div class="top-right links">
+                <div class="flex-center position-ref full-height">
+                    <a href="{{ url('/home') }}">Home</a>
+                    <a href="{{ url('/about') }}">About</a>
+                    <a href="{{ url('/contact') }}">Contact</a>
+                </div>
+            </div>
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                @livewire('counter',['steps' => 5])
+                @livewire('counter')
                 {{-- <livewire:hello-world />
                 <livewire:hello-world2 /> --}}
             </div>
         </div>
+        <script src="{{ asset('js/app') }}"></script>
         @livewireScripts
     </body>
 </html>
